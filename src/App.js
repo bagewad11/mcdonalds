@@ -1,16 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Section3 from "./pages/Home/Section3";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="menu" element={<Section3/>} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
